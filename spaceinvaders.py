@@ -16,15 +16,15 @@ import threading
 wn = turtle.Screen()
 wn.bgcolor("black")
 wn.title("Space Invaders")
-wn.bgpic("E:/python/space.gif")
+wn.bgpic("space.gif")
 
 # Register the sounds
-laser_gun = "E:/python/laser_gun.wav"
-explode = "E:/python/explode.wav"
+laser_gun = "laser_gun.wav"
+explode = "explode.wav"
 
 # Register the shapes
-turtle.register_shape("E:/python/player.gif")
-turtle.register_shape("E:/python/enemy.gif")
+turtle.register_shape("player.gif")
+turtle.register_shape("enemy.gif")
 # Create the borders
 border_pen = turtle.Turtle()
 border_pen.speed(0)
@@ -54,7 +54,7 @@ score_pen.hideturtle()
 # Player
 player = turtle.Turtle()
 player.color("blue")
-player.shape("E:/python/player.gif")
+player.shape("player.gif")
 player.penup()
 player.speed(0)
 player.setposition(0, -250)
@@ -74,7 +74,7 @@ for i in range(num_of_enemies):
 
 for enemy in enemies:
     enemy.color("red")
-    enemy.shape("E:/python/enemy.gif")
+    enemy.shape("enemy.gif")
     enemy.penup()
     enemy.speed(0)
     x = random.randint(-200, 200)
